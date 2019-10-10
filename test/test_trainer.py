@@ -214,7 +214,5 @@ class TestTrainer(unittest.TestCase):
         last_epoch = q.get()
 
         p.join()
-        q.close()
-        p.close()
 
         self.assertLess(last_epoch, max_epoch)
